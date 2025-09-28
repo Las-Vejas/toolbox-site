@@ -1,10 +1,16 @@
 ---
 import "../styles/global.css";
+import Analytics from '@vercel/analytics/astro'
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Toolbox</title>
+	<Analytics />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMtdmO3j7z9e2P1F6d5j5mX5p5h5j5h5j5h5j5h5" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-gray-50 text-gray-900">
     <slot />
