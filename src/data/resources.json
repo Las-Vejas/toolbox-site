@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Astro",
+    "image": "/astro.svg",
+    "description": "Modern static site builder",
+    "url": "https://astro.build",
+    "tags": ["framework", "static"]
+  },
+  {
+    "name": "Tailwind",
+    "image": "/tailwindcss-logotype.svg",
+    "description": "Utility-first CSS framework",
+    "url": "https://tailwindcss.com",
+    "tags": ["css", "framework"]
+  }
+]

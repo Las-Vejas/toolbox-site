@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ResourceCard from '../components/ResourceCard.astro';
+import resources from '../data/resources.json';
+---
+
+<Layout>
+	<main class="container mx-auto px-4 py-8">
+		<h1 class="text-center text-4xl font-bold mb-9">Developer Tools</h1>
+		<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+			{resources.map(resource => (
+				<ResourceCard 
+					name={resource.name}
+					image={resource.image}
+					description={resource.description}
+					url={resource.url}
+					tags={resource.tags}
+				/>
+			))}
+		</div>
+	</main>
+</Layout>
+

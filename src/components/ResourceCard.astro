@@ -1,0 +1,12 @@
+---
+const { name, image, description, url, tags } = Astro.props;
+---
+<a href={url} target="_blank" rel="noopener noreferrer">
+<div class="p-4 border rounded shadow hover:bg-gray-100">
+  <img src={image} alt={name} class="mt-2 mb-2 w-24 h-24 object-contain" />
+  <p class="text-lg">{description}</p>
+  <div class="flex gap-2 mt-2">
+    {tags && Array.isArray(tags) && tags.map(tag => <span class="text-base text-gray-600">{tag}</span>)}
+  </div>
+</div>
+</a>
